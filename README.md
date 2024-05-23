@@ -1,6 +1,9 @@
 # Persian 
 
 ## پروژه LCS
+<p align="center">
+  <a href="https://github.com/artafps/lcs-project-algorithm" target="blank"><img src="https://github.com/artafps/lcs-project-algorithm/blob/main/screencapture-localhost-3000-2024-05-23-17_27_08.png" alt="Nest Logo" /></a>
+</p>
 مشکل طولانی ترین متداول بعدی (LCS) یک مشکل کلاسیک در علوم کامپیوتر است. این شامل یافتن طولانی‌ترین دنباله‌ای است که دو دنباله مشترک دارند. دنباله فرعی دنباله ای است که با حذف برخی یا هیچ عنصری بدون تغییر ترتیب عناصر باقیمانده از دنباله دیگری به دست می آید.
 
 ### تعریف:
