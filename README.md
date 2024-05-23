@@ -48,7 +48,7 @@ Here's a JavaScript implementation using dynamic programming:
 ### Summary:
 The LCS problem is crucial in many applications like bioinformatics, text comparison, and version control systems. The dynamic programming approach is generally preferred due to its efficiency in terms of time complexity compared to the naive approach.
 
-## init [project] power bu next.js
+## init [project] power by next.js
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
