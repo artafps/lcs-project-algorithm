@@ -94,21 +94,20 @@ export default function Home() {
   }
 
   return (
-    <div >
-      <div >
+    <html  suppressHydrationWarning={true}>
         <main className="flex  flex-col items-center justify-between p-24">
-          <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+          <main className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
             <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
               git clone &nbsp;
               <code className="font-mono font-bold">https://github.com/artafps/lcs-project-algorithm.git</code>
             </p>
-            <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+            <main className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
               <a href="https://github.com/artafps/lcs-project-algorithm/fork"><Button>fork</Button></a>
-            </div>
-          </div>
+            </main>
+          </main>
           <br />
-          <div className="z-10 max-w-5xl w-full  justify-between font-mono text-sm lg:flex">
-            <div className=" w-full max-w-sm items-center ">
+          <main className="z-10 max-w-5xl w-full  justify-between font-mono text-sm lg:flex">
+            <main className=" w-full max-w-sm items-center ">
               <Input value={DNA1} onChangeFunc={getDNA1} type="text" placeholder="Type DNA 1" />
               <br />
               <Input value={DNA2} onChangeFunc={getDNA2} type="text" placeholder="Type DNA 2" />
@@ -126,63 +125,61 @@ export default function Home() {
                 </SelectContent>
               </Select><br />
               <Button onClick={handleMatrix} type="submit">Submit</Button>
-            </div>
+            </main>
             <br/>
             <br/>
             <br/>
-            <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-              <div>
-                <div className="space-y-1">
+            <main className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+              <main>
+                <main className="space-y-1">
                   <h4 className="text-sm font-medium leading-none">Result Matrix</h4>
                   <p>{Result}</p>
-                </div>
+                </main>
                 <Separator className="my-4" />
-                
                   {Selected !== 'Brute' ? (
                     <Fragment>
-                      <div className="flex h-5 items-center space-x-4 text-sm">
-                      <div>End</div>
+                      <main className="flex h-5 items-center space-x-4 text-sm">
+                      <main>End</main>
                       <Separator orientation="" />
                       {('e'+DNA2).split('').map((item,i) =>{
                         return(
                           <Fragment>
-                          {i===0?<div>End</div>:<div>{item}&nbsp;</div>}
+                          {i===0?<main>End</main>:<main>{item}&nbsp;</main>}
                           <Separator orientation="" />
                           </Fragment>
                         )
                       })}
-                      </div>
+                      </main>
                       <Separator className="my-4" />
                       
                       
                      {('e'+DNA1).split('').map((item,i) =>{
                         return(
-                          <div>
-                          <div className="flex h-5 items-center space-x-4 text-sm">
-                            {i===0?<div>End</div>:<div>{item} &nbsp;</div>}
-                            
-                            <Separator orientation="" />
-                             {Getdp.length===('e'+DNA1).split('').length?(Getdp[i].map((sitem , j )=>{
-                              return(
-                                <Fragment>
-                               <div>{Getdirection[i][j]===''?"-":Getdirection[i][j]} {+" "+sitem}</div>
-                               <Separator orientation="" />
-                                </Fragment>
-                              )
-                            })):null} 
-                          </div>
-                          <Separator className="my-4" />
-                          </div>
+                          <main>
+                            <main className="flex h-5 items-center space-x-4 text-sm">
+                              {i===0?<main>End</main>:<main>{item} &nbsp;</main>}
+                              
+                              <Separator orientation="" />
+                              {Getdp.length===('e'+DNA1).split('').length?(Getdp[i].map((sitem , j )=>{
+                                return(
+                                  <Fragment>
+                                    <main>{Getdirection[i][j]===''?"-":Getdirection[i][j]} {+" "+sitem}</main>
+                                    <Separator orientation="" />
+                                  </Fragment>
+                                )
+                              })):null} 
+                            </main>
+                            <Separator className="my-4" />
+                          </main>
                         )
                       })}
                       
                     </Fragment>
-                  ) : (<div>Result :{ Result}</div>)}                
-              </div>
-            </div>
-          </div>
+                  ) : ( <main>Result :{ Result}</main> )}                
+              </main>
+            </main>
+          </main>
         </main>
-      </div >
-    </div >
+    </html >
   );
 }
