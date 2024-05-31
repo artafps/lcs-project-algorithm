@@ -1,6 +1,9 @@
 # Persian 
 
 ## پروژه LCS
+<p align="center">
+  <a href="https://github.com/artafps/lcs-project-algorithm" target="blank"><img src="https://github.com/artafps/lcs-project-algorithm/blob/main/screencapture-localhost-3000-2024-05-23-17_27_08.png" alt="Nest Logo" /></a>
+</p>
 مشکل طولانی ترین متداول بعدی (LCS) یک مشکل کلاسیک در علوم کامپیوتر است. این شامل یافتن طولانی‌ترین دنباله‌ای است که دو دنباله مشترک دارند. دنباله فرعی دنباله ای است که با حذف برخی یا هیچ عنصری بدون تغییر ترتیب عناصر باقیمانده از دنباله دیگری به دست می آید.
 
 ### تعریف:
@@ -48,7 +51,7 @@ Here's a JavaScript implementation using dynamic programming:
 ### Summary:
 The LCS problem is crucial in many applications like bioinformatics, text comparison, and version control systems. The dynamic programming approach is generally preferred due to its efficiency in terms of time complexity compared to the naive approach.
 
-## init [project] power bu next.js
+## init [project] power by next.js
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
